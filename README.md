@@ -1,3 +1,21 @@
+--
+page_type: sample
+languages:
+- javascript
+- nodejs
+- terraform
+- dockerfile
+- hcl
+- azurecli
+name: "AD workload identity to securely access Azure services or resource from your Kubernetes cluster"
+description: "Use Azure AD workload identity to securely access Azure services or resource from your Kubernetes cluster - Example using Node.js application, AKS and Terraform."
+products:
+- azure
+- azure-active-directory
+- azure-kubernetes-service
+- azure-container-registry
+---
+
 # Use Azure AD workload identity to securely access Azure services or resource from your Kubernetes cluster - Example using Node.js application, AKS and Terraform
 
 A common challenge architects and developers face when designing a Kubernetes solution is how to grant containerized workload permissions to access an Azure service or resource.
