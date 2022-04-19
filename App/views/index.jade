@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1= title
+
+  table
+    thead
+      tr
+        th Property
+        th Value
+    tbody
+      each row in podInfo
+        tr
+          td #{row.name}
+          td #{row.value}
+
+  h1 App Role Assignments
+  
+  table
+    thead
+      tr
+        th Type
+        th Scope
+        th Role Definition Id
+    tbody
+      each row in roleAssignments
+        tr
+          td #{row.type}
+          td #{row.scope}
+          td #{row.roleDefinitionId}
+          
+
+  p Status: #{status}
