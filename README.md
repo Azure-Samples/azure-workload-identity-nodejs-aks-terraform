@@ -1,4 +1,4 @@
---
+---
 page_type: sample
 languages:
 - javascript
@@ -15,6 +15,7 @@ products:
 - azure-kubernetes-service
 - azure-container-registry
 ---
+
 
 # Use Azure AD workload identity to securely access Azure services or resource from your Kubernetes cluster - Example using Node.js application, AKS and Terraform
 
