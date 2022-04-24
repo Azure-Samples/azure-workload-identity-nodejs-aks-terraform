@@ -71,18 +71,16 @@ The credentials are obtained by simply using the constructor without any need fo
 
 This credentials are exposed to the application through the workload identity hook.
 
-`
-
-    async function getAppRoleAssignments() {
-
-        const credential = new DefaultAzureCredential();
-        const client = new AuthorizationManagementClient(credential, subscriptionId);
-
-        return client.roleAssignments.listForScope(`subscriptions/${subscriptionId}`, { filter: `assignedTo('{${servicePrincipalObjectId}}')` });
-
-    }
-
-`
+```js
+async function getAppRoleAssignments() {
+    const credential = new DefaultAzureCredential();
+    const client = new AuthorizationManagementClient(credential, subscriptionId);
+    return client.roleAssignments.listForScope(
+        `subscriptions/${subscriptionId}`,
+        { filter: `assignedTo('{${servicePrincipalObjectId}}')` }
+    );
+}
+```
 
 ### Infrastructure
 
